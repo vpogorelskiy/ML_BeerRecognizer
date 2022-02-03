@@ -7,17 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BDF4FE127ABD0E000CFB7E5 /* Views in Resources */ = {isa = PBXBuildFile; fileRef = 2BDF4FDC27ABD0E000CFB7E5 /* Views */; };
+		2BDF4FE227ABD0E000CFB7E5 /* Views in Resources */ = {isa = PBXBuildFile; fileRef = 2BDF4FDC27ABD0E000CFB7E5 /* Views */; };
+		2BDF4FEB27ABD37E00CFB7E5 /* FrameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDF4FE827ABD37E00CFB7E5 /* FrameManager.swift */; };
+		2BDF4FEC27ABD37E00CFB7E5 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDF4FE927ABD37E00CFB7E5 /* CameraManager.swift */; };
+		2BDF4FED27ABD37E00CFB7E5 /* CameraError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDF4FEA27ABD37E00CFB7E5 /* CameraError.swift */; };
+		2BDF4FF027ABD39900CFB7E5 /* CGImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDF4FEF27ABD39900CFB7E5 /* CGImageExtension.swift */; };
+		2BDF4FF327ABD3A600CFB7E5 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDF4FF227ABD3A600CFB7E5 /* CameraViewModel.swift */; };
+		2BDF4FFA27ABD3B900CFB7E5 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDF4FF727ABD3B800CFB7E5 /* CameraView.swift */; };
+		2BDF4FFB27ABD3B900CFB7E5 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDF4FF827ABD3B900CFB7E5 /* ErrorView.swift */; };
+		2BDF4FFC27ABD3B900CFB7E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDF4FF627ABD3B800CFB7E5 /* ContentView.swift */; };
 		2BFD6F4D27AA726A004B856F /* OTUS_Homework_9App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFD6F3D27AA7268004B856F /* OTUS_Homework_9App.swift */; };
 		2BFD6F4E27AA726A004B856F /* OTUS_Homework_9App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFD6F3D27AA7268004B856F /* OTUS_Homework_9App.swift */; };
-		2BFD6F4F27AA726A004B856F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFD6F3E27AA7268004B856F /* ContentView.swift */; };
-		2BFD6F5027AA726A004B856F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFD6F3E27AA7268004B856F /* ContentView.swift */; };
 		2BFD6F5127AA726A004B856F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BFD6F3F27AA726A004B856F /* Assets.xcassets */; };
 		2BFD6F5227AA726A004B856F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BFD6F3F27AA726A004B856F /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BDF4FDC27ABD0E000CFB7E5 /* Views */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Views; sourceTree = "<group>"; };
+		2BDF4FE827ABD37E00CFB7E5 /* FrameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameManager.swift; sourceTree = "<group>"; };
+		2BDF4FE927ABD37E00CFB7E5 /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		2BDF4FEA27ABD37E00CFB7E5 /* CameraError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraError.swift; sourceTree = "<group>"; };
+		2BDF4FEF27ABD39900CFB7E5 /* CGImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGImageExtension.swift; sourceTree = "<group>"; };
+		2BDF4FF227ABD3A600CFB7E5 /* CameraViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		2BDF4FF627ABD3B800CFB7E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2BDF4FF727ABD3B800CFB7E5 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		2BDF4FF827ABD3B900CFB7E5 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		2BFD6F3D27AA7268004B856F /* OTUS_Homework_9App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUS_Homework_9App.swift; sourceTree = "<group>"; };
-		2BFD6F3E27AA7268004B856F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2BFD6F3F27AA726A004B856F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BFD6F4427AA726A004B856F /* OTUS_Homework_9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTUS_Homework_9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BFD6F4A27AA726A004B856F /* OTUS_Homework_9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTUS_Homework_9.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +58,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BDF4FE727ABD37000CFB7E5 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				2BDF4FEA27ABD37E00CFB7E5 /* CameraError.swift */,
+				2BDF4FE927ABD37E00CFB7E5 /* CameraManager.swift */,
+				2BDF4FE827ABD37E00CFB7E5 /* FrameManager.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		2BDF4FEE27ABD39400CFB7E5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2BDF4FEF27ABD39900CFB7E5 /* CGImageExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2BDF4FF127ABD3A000CFB7E5 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				2BDF4FF227ABD3A600CFB7E5 /* CameraViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		2BDF4FF427ABD3B100CFB7E5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2BDF4FF627ABD3B800CFB7E5 /* ContentView.swift */,
+				2BDF4FF827ABD3B900CFB7E5 /* ErrorView.swift */,
+				2BDF4FF727ABD3B800CFB7E5 /* CameraView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		2BFD6F3727AA7268004B856F = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +106,12 @@
 		2BFD6F3C27AA7268004B856F /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2BDF4FF427ABD3B100CFB7E5 /* UI */,
+				2BDF4FF127ABD3A000CFB7E5 /* VM */,
+				2BDF4FEE27ABD39400CFB7E5 /* Extensions */,
+				2BDF4FE727ABD37000CFB7E5 /* Camera */,
 				2BFD6F3D27AA7268004B856F /* OTUS_Homework_9App.swift */,
-				2BFD6F3E27AA7268004B856F /* ContentView.swift */,
+				2BDF4FDC27ABD0E000CFB7E5 /* Views */,
 				2BFD6F3F27AA726A004B856F /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -157,6 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BDF4FE127ABD0E000CFB7E5 /* Views in Resources */,
 				2BFD6F5127AA726A004B856F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BDF4FE227ABD0E000CFB7E5 /* Views in Resources */,
 				2BFD6F5227AA726A004B856F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,8 +234,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BFD6F4F27AA726A004B856F /* ContentView.swift in Sources */,
+				2BDF4FFA27ABD3B900CFB7E5 /* CameraView.swift in Sources */,
 				2BFD6F4D27AA726A004B856F /* OTUS_Homework_9App.swift in Sources */,
+				2BDF4FF027ABD39900CFB7E5 /* CGImageExtension.swift in Sources */,
+				2BDF4FF327ABD3A600CFB7E5 /* CameraViewModel.swift in Sources */,
+				2BDF4FEC27ABD37E00CFB7E5 /* CameraManager.swift in Sources */,
+				2BDF4FFC27ABD3B900CFB7E5 /* ContentView.swift in Sources */,
+				2BDF4FEB27ABD37E00CFB7E5 /* FrameManager.swift in Sources */,
+				2BDF4FFB27ABD3B900CFB7E5 /* ErrorView.swift in Sources */,
+				2BDF4FED27ABD37E00CFB7E5 /* CameraError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,7 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BFD6F5027AA726A004B856F /* ContentView.swift in Sources */,
 				2BFD6F4E27AA726A004B856F /* OTUS_Homework_9App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
