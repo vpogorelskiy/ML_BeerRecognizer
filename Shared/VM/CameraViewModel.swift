@@ -1,8 +1,12 @@
 import CoreImage
+import Vision
+import SwiftUI
 
 class CameraViewModel: ObservableObject {
     @Published var error: Error?
     @Published var frame: CGImage?
+    
+    @Published var detectedDescription: String = ""
     
     private let context = CIContext()
     
@@ -31,5 +35,40 @@ class CameraViewModel: ObservableObject {
                 return self.context.createCGImage(ciImage, from: ciImage.extent)
             }
             .assign(to: &$frame)
+    }
+    
+    func runDetector() {
+        guard let model = try? VNCoreMLModel(for: BeerImageModel().model) else {
+            print("MODEL ERROR")
+            return
+        }
+        
+        guard let frame = frame else {
+            print("IMAGE ERROR")
+            return
+        }
+        
+        let image = UIImage(cgImage: frame)
+        
+        let request = VNCoreMLRequest(model: model) { [weak self] request, error in
+            if let observations = request.results as? [VNClassificationObservation] {
+                let top3 = observations.prefix(through: 2)
+                    .map { ($0.identifier, Double($0.confidence)) }
+                
+                //var label = ""
+                //for place in top3 {
+                let split = top3[0].0.split(separator: "\t")
+                print(split)
+                self?.detectedDescription = split.joined(separator: "\n")
+                //}
+                
+                
+            }
+        }
+        
+        request.imageCropAndScaleOption = .centerCrop
+        
+        let handler = VNImageRequestHandler(cgImage: image.cgImage!)
+        try? handler.perform([request])
     }
 }

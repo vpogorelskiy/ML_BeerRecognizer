@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2BDF4FE127ABD0E000CFB7E5 /* Views in Resources */ = {isa = PBXBuildFile; fileRef = 2BDF4FDC27ABD0E000CFB7E5 /* Views */; };
-		2BDF4FE227ABD0E000CFB7E5 /* Views in Resources */ = {isa = PBXBuildFile; fileRef = 2BDF4FDC27ABD0E000CFB7E5 /* Views */; };
+		2BBAD38F27ABEBDE005B0EC1 /* BeerImageModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2BBAD38E27ABEBDE005B0EC1 /* BeerImageModel.mlmodel */; };
 		2BDF4FEB27ABD37E00CFB7E5 /* FrameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDF4FE827ABD37E00CFB7E5 /* FrameManager.swift */; };
 		2BDF4FEC27ABD37E00CFB7E5 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDF4FE927ABD37E00CFB7E5 /* CameraManager.swift */; };
 		2BDF4FED27ABD37E00CFB7E5 /* CameraError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDF4FEA27ABD37E00CFB7E5 /* CameraError.swift */; };
@@ -24,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2BDF4FDC27ABD0E000CFB7E5 /* Views */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Views; sourceTree = "<group>"; };
+		2BBAD38E27ABEBDE005B0EC1 /* BeerImageModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BeerImageModel.mlmodel; sourceTree = "<group>"; };
 		2BDF4FE827ABD37E00CFB7E5 /* FrameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameManager.swift; sourceTree = "<group>"; };
 		2BDF4FE927ABD37E00CFB7E5 /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		2BDF4FEA27ABD37E00CFB7E5 /* CameraError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraError.swift; sourceTree = "<group>"; };
@@ -94,6 +93,14 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		2BDF500327ABE9FD00CFB7E5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2BBAD38E27ABEBDE005B0EC1 /* BeerImageModel.mlmodel */,
+			);
+			path = Models;
+			sourceTree = SOURCE_ROOT;
+		};
 		2BFD6F3727AA7268004B856F = {
 			isa = PBXGroup;
 			children = (
@@ -106,12 +113,12 @@
 		2BFD6F3C27AA7268004B856F /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2BDF500327ABE9FD00CFB7E5 /* Models */,
 				2BDF4FF427ABD3B100CFB7E5 /* UI */,
 				2BDF4FF127ABD3A000CFB7E5 /* VM */,
 				2BDF4FEE27ABD39400CFB7E5 /* Extensions */,
 				2BDF4FE727ABD37000CFB7E5 /* Camera */,
 				2BFD6F3D27AA7268004B856F /* OTUS_Homework_9App.swift */,
-				2BDF4FDC27ABD0E000CFB7E5 /* Views */,
 				2BFD6F3F27AA726A004B856F /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -213,7 +220,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BDF4FE127ABD0E000CFB7E5 /* Views in Resources */,
 				2BFD6F5127AA726A004B856F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,7 +228,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BDF4FE227ABD0E000CFB7E5 /* Views in Resources */,
 				2BFD6F5227AA726A004B856F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +247,7 @@
 				2BDF4FFC27ABD3B900CFB7E5 /* ContentView.swift in Sources */,
 				2BDF4FEB27ABD37E00CFB7E5 /* FrameManager.swift in Sources */,
 				2BDF4FFB27ABD3B900CFB7E5 /* ErrorView.swift in Sources */,
+				2BBAD38F27ABEBDE005B0EC1 /* BeerImageModel.mlmodel in Sources */,
 				2BDF4FED27ABD37E00CFB7E5 /* CameraError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
