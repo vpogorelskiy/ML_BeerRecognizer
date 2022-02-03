@@ -10,12 +10,8 @@ struct ContentView: View {
             
             ErrorView(error: model.error)
             
-            VStack {
-                Spacer()
-                Text(model.detectedDescription)
-                    .font(.largeTitle)
-                    .padding()
-            }
+            Text(model.detectedDescription)
+                .font(.largeTitle)
             
         }
     }

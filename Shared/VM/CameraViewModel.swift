@@ -59,7 +59,7 @@ class CameraViewModel: ObservableObject {
             if let observations = request.results as? [VNClassificationObservation] {
                 let top3 = observations.prefix(through: 2)
                     .map { ($0.identifier, Double($0.confidence)) }
-                
+                print(observations)
                 //var label = ""
                 //for place in top3 {
                 let split = top3[0].0.split(separator: "\t")
