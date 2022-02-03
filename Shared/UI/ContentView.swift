@@ -9,6 +9,14 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(.all)
             
             ErrorView(error: model.error)
+            
+            VStack {
+                Spacer()
+                Text(model.detectedDescription)
+                    .font(.largeTitle)
+                    .padding()
+            }
+            
         }
     }
 }

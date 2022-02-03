@@ -8,6 +8,8 @@ class CameraViewModel: ObservableObject {
     
     @Published var detectedDescription: String = ""
     
+    private var isDetecting = false
+    
     private let context = CIContext()
     
     private let cameraManager = CameraManager.shared
@@ -31,6 +33,7 @@ class CameraViewModel: ObservableObject {
                 }
                 
                 let ciImage = CIImage(cgImage: image)
+                self.runDetector()
                 
                 return self.context.createCGImage(ciImage, from: ciImage.extent)
             }
@@ -38,7 +41,7 @@ class CameraViewModel: ObservableObject {
     }
     
     func runDetector() {
-        guard let model = try? VNCoreMLModel(for: BeerImageModel().model) else {
+        guard !isDetecting, let model = try? VNCoreMLModel(for: BeerImageModel(configuration: .init()).model) else {
             print("MODEL ERROR")
             return
         }
@@ -49,6 +52,8 @@ class CameraViewModel: ObservableObject {
         }
         
         let image = UIImage(cgImage: frame)
+        
+        isDetecting = true
         
         let request = VNCoreMLRequest(model: model) { [weak self] request, error in
             if let observations = request.results as? [VNClassificationObservation] {
@@ -62,13 +67,18 @@ class CameraViewModel: ObservableObject {
                 self?.detectedDescription = split.joined(separator: "\n")
                 //}
                 
-                
+                self?.isDetecting = false
             }
         }
         
         request.imageCropAndScaleOption = .centerCrop
         
         let handler = VNImageRequestHandler(cgImage: image.cgImage!)
+        
         try? handler.perform([request])
+    }
+    
+    func continueDetector() {
+        
     }
 }
